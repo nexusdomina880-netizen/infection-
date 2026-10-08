@@ -1,7 +1,7 @@
 import { xpRange } from '../lib/levelling.js'
 import { join } from 'path'
 
-const localImg = join(process.cwd(), 'WA_1791285295586.jpeg');
+const localImg = join(process.cwd(), 'IMG-20261005-WA0143.jpg');
 
 const emojicategoria = {
   iatesto: '📝',
@@ -10,14 +10,14 @@ const emojicategoria = {
 }
 
 let tags = {
-  'iatesto': '⚡ ʀʟʏ 𝙸𝙰 𝚃𝙴𝚂𝚃𝙾 ⚡',
-  'iaaudio': '⚡ ʀʟʏ 𝙸𝙰 𝙰𝚄𝙳𝙸𝙾 ⚡',
-  'iaimmagini': '⚡ ʀʟʏ 𝙸𝙰 𝙸𝙼𝙼𝙰𝙶𝙸𝙽𝙸 ⚡'
+  'iatesto': '⚡ ɪɴғᴇᴄᴛɪᴏɴ 𝙸𝙰 𝚃𝙴𝚂𝚃𝙾 ⚡',
+  'iaaudio': '⚡ ɪɴғᴇᴄᴛɪᴏɴ 𝙸𝙰 𝙰𝚄𝙳𝙸𝙾 ⚡',
+  'iaimmagini': '⚡ ɪɴғᴇᴄᴛɪᴏɴ 𝙸𝙰 𝙸𝙼𝙼𝙰𝙶𝙸𝙽𝙸 ⚡'
 }
 
 const defaultMenu = {
   testoInizio: `
-⚡  〔 𝐑 𝐋 𝐘  •  𝐈 𝐀 〕  ⚡
+⚡  〔 𝐈𝐍𝐅𝐄𝐂𝐓𝐈𝐎𝐍  •  𝐈 𝐀 〕  ⚡
 
 ┃ 👤 𝚄𝚝𝚎𝚗𝚝𝚎 ⭔ @%user
 ┃ 🏆 𝙻𝚒𝚟𝚎𝚕𝚕𝚘 ⭔ %level
@@ -113,4 +113,4 @@ function toTypewriter(str) {
     const index = normal.indexOf(char)
     return index !== -1 ? typewriter.substr(index * 2, 2) : char
   }).join('')
-}
+          }
