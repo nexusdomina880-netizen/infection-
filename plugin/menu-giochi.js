@@ -3,11 +3,11 @@ import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
 import moment from 'moment-timezone'
 
-const localImg = join(process.cwd(), 'WA_1791285295586.jpeg'); 
+const localImg = join(process.cwd(), 'IMG-20261005-WA0143.jpg'); 
 
 const defaultMenu = {
   before: `
-⚡  〔 𝐑 𝐋 𝐘  •  𝐆 𝐀 𝐌 𝐄 𝐒 〕  ⚡
+⚡  〔 𝐈𝐍𝐅𝐄𝐂𝐓𝐈𝐎𝐍•𝐆𝐀𝐌𝐄𝐒 〕  ⚡
 
 ┃ 👤 𝚄𝚝𝚎𝚗𝚝𝚎 ⭔ @%user
 ┃ 🏆 𝙻𝚒𝚟𝚎𝚕𝚕𝚘 ⭔ %level
@@ -22,7 +22,7 @@ const defaultMenu = {
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
-  let tags = { 'giochi': '⚡ ʀʟʏ 𝙶𝙰𝙼𝙴 𝙲𝙴𝙽𝚃𝙴𝚁 ⚡' }
+  let tags = { 'giochi': '⚡ ɪɴғᴇᴄᴛɪᴏɴ 𝙶𝙰𝙼𝙴 𝙲𝙴𝙽𝚃𝙴𝚁 ⚡' }
 
   try {
     await conn.sendPresenceUpdate('composing', m.chat)
@@ -108,4 +108,4 @@ function toTypewriter(str) {
     const index = normal.indexOf(char)
     return index !== -1 ? typewriter.substr(index * 2, 2) : char
   }).join('')
-}
+    }
