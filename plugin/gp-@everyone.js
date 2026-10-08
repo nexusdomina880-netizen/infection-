@@ -1,4 +1,4 @@
-import { generateWAMessageFromContent } from '@realvare/based';
+import { generateWAMessageFromContent } from '@realvare/baileys';
 const handler = async (m, { conn, participants }) => {
   try {
     const users = participants;
